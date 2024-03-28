@@ -89,107 +89,80 @@ ex) 차량을 이미 빌려서 주행거리가 늘어날수 있으니 주행거�
 * 관리자페이지 대시보드 페이지 - 현황판의 경우에는 총 비용 / 보유 차종 / 전국 매장 수가 존재
 총 비용의 경우 결제완료된 모든 price값을 더한값이고 보유 차종은 orderby에서 보유중인 차종수이고, 매장 수는 order by에서 소유하고 있는 매장의 카운트 수 
 
-<div align="center">
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/a27b04a9-d4ac-4957-83f6-ca01cbdebc8b)
-</div>
 
 
 * 회원관리 페이지 - member table에 있는 데이터를 가져와서 보여주는 방식
-* 
-<div align="center">
+
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/2a2701bf-a0ac-4297-9059-5c8b6c021a84)
-</div>
 
 
 * 회원정보관리 페이지 - 회원 이름을 선택하면 db에 있는 해당하는 회원의 정보값을 가져온 후 수정이 가능하게 구현
 회원 탈퇴를 진행하게되면 status값이 n으로 변경되고 status가 n값이면 활성화 버튼으로 다시 status값을 y로 바꿔줄수있으며, 비밀번호는 암호화처리로 진행
 
-<div align="center">
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/039ce841-f5b3-43b4-9ca1-335d8e18b75f)
-</div>
 
 
 * 상담관리 페이지 - popqna table에 있는 데이터를 가져오는 방식
 
-<div align="center">
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/e10a5612-9f36-4971-b5f0-c97cfce2efee)
-</div>
 
 
 * 상담 내용 확인 페이지 - 메인홈페이지에 실시간 상담을 진행하게 되면 db값에 저장된 것을 불러오는 것입니다.
 이름을 선택하면 db에 해당하는 상담의 정보를 가져온 후에 전화/이메일을 통하여 상담을 진행 후에 답변 확인 버튼을 클릭하여 답변완료 값으로 변경해줍니다.
 
-<div align="center">
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/091289e2-37cd-4bd9-9921-6031ec831ca9)
-</div>
 
 
 * 결제 내역 관리 페이지 - payment table에 있는 데이터를 가져오는 방식
   
-<div align="center">
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/6545038c-da9c-4106-8ee8-4c1a53f89791)
-</div>
 
 
 * 결제 내역 확인 페이지 - 상품 이름을 클릭하면 db에 있는 해당하는 정보를 가져옴
  결제 상태가 y이면 결제 취소가 가능하게 되어있으며, 결제를 취소할 경우 결제 최종 금액에 80%를 해당하는 회원의 포인트로 반환
 
-<div align="center">
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/2cac6535-02fb-45dc-b9fb-54694bcbe0f5)
-</div>
 
 
 * 자동차 정보 수정 페이지 - 자동차 이름을 눌러 db에 있는 정보값을 가져온 후에 수정 / 삭제(활성화)를 가능하게 구현
 
-<div align="center">
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/7b310032-df00-46f4-aeed-8f1c2aa938cf)
-</div>
 
 
 * 오토바이 정보 수정 페이지 - 오토바이 이름을 눌러 db에 있는 정보값을 가져온 후에 수정 / 삭제(활성화)를 가능하게 구현
-  
-<div align="center">
+
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/59d59dc1-0143-4a83-b86f-dafe2327f099)
-</div>
+
 
 
 * 자동차 등록 페이지 - 자동차를 등록하게 되는 폼이며
 자동차를 등록할때 사진을 넣으면 해당하는 브랜드에 자동으로 사진이 저장되고 
 매장위치를 선택하면 매장위치에 해당하는 StoreNo값을 가져오며, 사진을 등록하면 Pfile이라는 table에 있는 PfileNo값도 가져옴
 
-<div align="center">
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/1a063d7b-5e6c-469d-85ff-ae32414d0e52)
-</div>
 
 
 * 매장 관리 페이지 - store table에 있는 데이터를 가져오는 방식
 
-<div align="center">
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/b368e846-aac4-464f-aad8-c630fddd6bd9)
-</div>
 
 
 * 매장 정보 수정 페이지 - 해당 이름을 선택하면 db에 있는 정보를 가져오며 위도값과 경도값을 가져온 후 지도에 해당하는 장소를 보여준 후, 다른 테이블과 같이 수정 / 삭제(활성화)를 가능하게 구현
-
-<div align="center">  
+  
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/e4598f4b-c650-4750-99f1-ea607d28f6be)
-</div>
 
 
 * 매장 등록 페이지 - 매장을 등록하는 폼이며,
 주소검색으로 주소를 검색하면 그 해당하는 주소의 지도와 위도 경도값을 가져온후에 매장이름과 매장 보유 차종수를 기입하여 insert하면 store table에 저장
 
-<div align="center">
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/fd7c190f-c200-48df-8bb3-a2e57b378ca5)
-</div>
 
 
 * 차종 및 요금 페이지 - UI식으로 구현되어있으며,
 자동차나 오토바이는 테이블에서 중복값을 제거하고 가져옴
 
-<div align="center">
 ![image](https://github.com/hswoo9/OrderBy/assets/118331567/80ce7691-ef42-4562-88c7-f777fd994f9f)
-</div>
 
 
 ## 아쉬웠던 점
