@@ -19,6 +19,11 @@
   |디자인툴|HTML5, CSS3|
   |협업툴|ERD cloud, Jira, Git hub|
   
+-Jira
+![image](https://github.com/hswoo9/OrderBy/assets/118331567/bf07ce67-7dca-4bde-9f34-b4ca52e312a7)
+
+-ERD Cloud
+![image](https://github.com/hswoo9/OrderBy/assets/118331567/8f4ab56d-c003-42de-adc2-0853e16c639a)
 
 
 ## 개발 주요사항
